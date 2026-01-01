@@ -8,6 +8,12 @@ return {
     input = {
       -- enabled = true,
     },
+    dashboard = {
+      enabled = true,
+      sections = {
+        { pane = 1, title = "Welcome back Benjamin" },
+      },
+    },
     explorer = {
       files = {
         hidden = true,
