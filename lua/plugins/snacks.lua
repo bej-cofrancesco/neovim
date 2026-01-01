@@ -5,9 +5,6 @@ return {
   ---@type snacks.Config
   opts = {
     -- scroll = { enabled = true },
-    input = {
-      -- enabled = true,
-    },
     dashboard = {
       enabled = true,
       sections = {
@@ -15,12 +12,18 @@ return {
       },
     },
     explorer = {
+      style = "minimal",
+      backdrop = false,
+      blend = 10,
       files = {
         hidden = true,
         ignored = true,
       },
     },
     picker = {
+      style = "minimal",
+      backdrop = false,
+      blend = 10,
       sources = {
         explorer = { hidden = true, ignored = true },
       },
@@ -29,6 +32,86 @@ return {
         ignored = true,
       },
     },
+    terminal = {
+      enabled = true,
+      backdrop = false,
+      win = {
+        position = "float",
+        style = "minimal",
+        border = "rounded",
+        blend = 20,
+        wo = {
+          winbar = "",
+          winhighlight = "Normal:Normal",
+        },
+      },
+    },
+    lazygit = {
+      backdrop = false,
+      enabled = true,
+      configure = true,
+      win = {
+        style = "minimal",
+        border = "rounded",
+        blend = 10,
+        wo = { winblend = 10 },
+      },
+    },
+    gitbrowse = {
+      enabled = true,
+      notify = true,
+      backdrop = false,
+    },
+    input = {
+      enabled = true,
+      backdrop = false,
+      win = {
+        relative = "cursor",
+        row = 1,
+        col = 0,
+        width = 60,
+        style = "minimal",
+        border = "rounded",
+        blend = 10,
+        winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+      },
+    },
+    styles = {
+      notification = {
+        backdrop = false,
+        wo = { wrap = true },
+        style = "minimal",
+        border = "rounded",
+        blend = 10,
+      },
+      scratch = {
+        backdrop = false,
+        style = "minimal",
+        border = "rounded",
+        blend = 10,
+      },
+      lazygit = {
+        backdrop = false,
+        style = "minimal",
+        border = "rounded",
+        blend = 10,
+      },
+      float = {
+        backdrop = false,
+        style = "minimal",
+        border = "rounded",
+        blend = 10,
+      },
+      picker = {
+        backdrop = false,
+        blend = 10,
+      },
+      explorer = {
+        backdrop = false,
+        blend = 10,
+      },
+    },
+
     bigfile = { enabled = true },
     -- WARNING: Breaks and issues tons of warnings in VSCode Neovim
     words = { enabled = true },
