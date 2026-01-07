@@ -13,6 +13,7 @@ return {
     },
     explorer = {
       style = "minimal",
+      enabled = false,
       backdrop = false,
       blend = 10,
       files = {
